@@ -11,6 +11,9 @@ const connect = function () {
   conn.on('connect', () => {
     console.log("Connection to server Initialised");
     conn.write('Name: 009')
+    // setInterval(() => {
+    //   conn.write('Move: up');
+    // }, 50);
   });
 
   return conn;
